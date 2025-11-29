@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'providers/resume_provider.dart';
 import 'screens/home_screen.dart';
-import 'screens/profile_screen.dart';
 import 'screens/jobs_screen.dart';
 import 'screens/learning_screen.dart';
 import 'auth/login.dart';

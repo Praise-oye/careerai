@@ -72,7 +72,7 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
           .get();
 
       if (querySnapshot.docs.isEmpty) {
-        emit(RegisterFailedState(failedMessage: "email exists"));
+       
       }
       final userCredential = await firebaseAuth.createUserWithEmailAndPassword(
         email: event.email,

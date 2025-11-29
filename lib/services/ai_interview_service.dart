@@ -189,7 +189,7 @@ class AIInterviewService {
         'messages': [
           {
             'role': 'system',
-            'content': 'You are Arya, an expert interview coach. Generate a natural follow-up question based on the conversation.',
+            'content': 'You are Thrive, an expert interview coach. Generate a natural follow-up question based on the conversation.',
           },
           ...messages,
           {
@@ -217,7 +217,7 @@ class AIInterviewService {
     int totalQuestions = 5,
     String? previousAnswer,
     String? previousQuestion,
-    String interviewerName = 'Arya',
+    String interviewerName = 'Thrive',
     String candidateName = 'there',
   }) async {
     try {

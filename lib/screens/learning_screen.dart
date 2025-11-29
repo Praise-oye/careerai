@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -1492,7 +1494,7 @@ class _LearningScreenState extends State<LearningScreen> with SingleTickerProvid
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Chat with Arya',
+                      'Chat with Thrive',
                       style: GoogleFonts.inter(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -1597,7 +1599,7 @@ class _LearningScreenState extends State<LearningScreen> with SingleTickerProvid
           Icon(Icons.chat_bubble_outline, size: 60, color: Colors.grey[300]),
           const SizedBox(height: 16),
           Text(
-            'Hi! I\'m Arya, your AI career mentor.',
+            'Hi! I\'m Thrive, your AI career mentor.',
             style: GoogleFonts.inter(
               fontSize: 18,
               fontWeight: FontWeight.bold,

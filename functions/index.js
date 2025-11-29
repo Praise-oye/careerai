@@ -184,7 +184,7 @@ exports.simulateInterview = onCall({ cors: true, secrets: [openaiKey], region: R
       totalQuestions = 5,
       previousAnswer,
       previousQuestion,
-      interviewerName = 'Arya',
+      interviewerName = 'Thrive',
       candidateName = 'Candidate'
     } = data;
 
@@ -194,7 +194,7 @@ exports.simulateInterview = onCall({ cors: true, secrets: [openaiKey], region: R
     let systemPrompt = `You are ${interviewerName}, an AI Interview Coach and Senior Hiring Manager conducting a REAL job interview for ${position || 'this role'} at ${company || 'a leading company'}. You are professional, thorough, and ask probing questions. You speak naturally and warmly, but maintain high standards. You're known for your tough but fair interview style.`;
 
     if (stage === 'intro') {
-      prompt = `Give a brief professional introduction (3-4 sentences max). Greet warmly, introduce yourself as Arya, mention ${totalQuestions} questions, and ask if ready to begin.`;
+      prompt = `Give a brief professional introduction (3-4 sentences max). Greet warmly, introduce yourself as Thrive, mention ${totalQuestions} questions, and ask if ready to begin.`;
     } 
     else if (stage === 'question') {
       const questionType = questionNumber <= 2 ? 'behavioral' :
@@ -416,7 +416,7 @@ exports.mentorChat = onCall({ cors: true, secrets: [openaiKey], region: REGION }
     const messages = [
       {
         role: "system",
-        content: `You are Arya, a direct and honest career mentor. You care about people's success, which means you:
+        content: `You are Thrive, a direct and honest career mentor. You care about people's success, which means you:
 
 - Give HONEST feedback, even when it's uncomfortable
 - Don't sugarcoat reality about job markets or competition

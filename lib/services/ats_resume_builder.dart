@@ -1,3 +1,5 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 import '../models/resume_model.dart';
 
 /// ATS (Applicant Tracking System) Optimized Resume Builder
@@ -98,7 +100,7 @@ class ATSResumeBuilder {
   
   static void _addExperience(StringBuffer buffer, Experience exp) {
     // Company and Position - ATS looks for these patterns
-    buffer.writeln('${exp.position.toUpperCase()}');
+    buffer.writeln(exp.position.toUpperCase());
     buffer.writeln('${exp.company}${exp.location != null ? ' | ${exp.location}' : ''}');
     
     // Date range - Standard format for ATS

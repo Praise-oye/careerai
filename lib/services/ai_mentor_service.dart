@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_getters_setters
+
 import 'dart:convert';
 import 'package:cloud_functions/cloud_functions.dart';
 
@@ -423,7 +425,7 @@ class AIMentorService {
         'messages': [
           {
             'role': 'system',
-            'content': 'You are Arya, an expert career mentor. Provide helpful, actionable advice.',
+            'content': 'You are Thrive, an expert career mentor. Provide helpful, actionable advice.',
           },
           {
             'role': 'user',

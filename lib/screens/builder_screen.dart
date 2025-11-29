@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, strict_top_level_inference
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';

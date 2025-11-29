@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -73,12 +75,12 @@ class _InterviewPracticeScreenState extends State<InterviewPracticeScreen> {
   bool _useVoiceMode = false;
   
   // Simulation mode - realistic interview
-  bool _useSimulationMode = true;
+  final bool _useSimulationMode = true;
   String _interviewStage = 'intro'; // intro, question, followup, closing, report
-  String _interviewerName = 'Arya';
-  int _totalQuestions = 5;
-  List<QuestionAnswer> _questionsAndAnswers = [];
-  List<double> _allScores = [];
+  final String _interviewerName = 'Thrive';
+  final int _totalQuestions = 5;
+  final List<QuestionAnswer> _questionsAndAnswers = [];
+  final List<double> _allScores = [];
   InterviewReport? _finalReport;
   
   // Video call timer
@@ -95,7 +97,7 @@ class _InterviewPracticeScreenState extends State<InterviewPracticeScreen> {
   int _pauseCount = 0;
   List<double> _soundLevels = [];
 
-  List<InterviewMessage> _messages = [];
+  final List<InterviewMessage> _messages = [];
   String? _currentQuestion;
   bool _isLoading = false;
   bool _isWaitingForAnswer = false;
@@ -274,7 +276,7 @@ class _InterviewPracticeScreenState extends State<InterviewPracticeScreen> {
           _interviewStage = 'intro';
           _messages.add(InterviewMessage(
             role: 'assistant',
-            content: '${response.response}',
+            content: response.response,
           ));
           _isLoading = false;
           _isWaitingForAnswer = true;
